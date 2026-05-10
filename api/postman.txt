@@ -1,0 +1,101 @@
+API - Application Programming Interface 
+
+How API works in real time?
+-----
+
+Used Google Maps inside a food delivery app? --> That's an API showing the map.
+
+Checked the weather on your phone? -->The app used a Weather API to get the info.
+
+Logged into a website using your Google or Facebook account? --> That's an API handling the login. 
+
+ 
+
+Some Network Terms:
+---
+-> Understanding API with a Restaurant Analogy
+
+1. Client = The one who makes the request (like a browser or app)
+    - Just like a customer placing an order in a restaurant.
+
+2. API = The middleman that passes the request to the server and brings back the response.
+    - Like a waiter who takes your order to the kitchen and brings your food.
+
+3. Server = Where all the processing happens (the backend)
+    - Like the kitchen, where your order gets prepared.
+
+Types of APIs:
+---
+=> Real-World Example: Uploading a Photo on Instagram
+
+1. Uses Hardware API to access your camera
+2. Uses Software API to apply filters, make your image appear better
+3. Uses Web API to upload the photo from your Phone to Instagram's server
+
+API Tools:
+---
+
+What is Postman?
+---
+-> Postman is a tool that helps you create, test, and
+use APIs easily.
+-> It makes every step of working with APIs simple -
+from building them to trying them out.
+-> It also helps teams collaborate better when
+working on APIs.
+-> That's why more than 25 million people use
+Postman around the world!
+
+ 
+Working with APIs: Then vs NOW:
+---
+ 1. Before Postman: Developers used a command-line
+tool called "cURL" command in cmd to test APIs
+ 2. Now with Postman: You get an easy-to-use
+interface to test APIs without typing long
+commands
+
+-> Postman also makes it easier to share and
+work with your team
+
+
+Difference Between curl & Postman
+------------------------------------------------
+Feature	                    curl	                        Postman
+---------------------------------------------------------------------------
+Type	                Command-line tool	                GUI application
+Ease of Use	            Requires commands	                Beginner-friendly
+Interface	                Terminal	                    Visual interface
+Speed	                Fast and lightweight	            Heavier application
+Automation	            Excellent for scripts	            Better for manual testing
+Learning Curve	            Higher	                        Easier
+API Testing	                Yes	                            Yes
+Environment Variables	Possible but manual	                Built-in support
+Team Collaboration	    Limited	                            Strong collaboration tools
+Best For	            Developers, automation, CI/CD	    API development/testing
+
+
+What is a Collection in Postman?
+-------------------------------------
+- A collection in Postman is like a folder where you keep your saved API requests.
+- Think of it like this:
+    Collection = A folder
+- API Requests = The files inside it
+
+Postman Conceps:
+----------------
+1. Collections = A folder
+2. API Request Methods
+3. Request Response pattern
+4. Set a variable
+{{bookURL}}
+bookURL = https://library-api.postmanlabs.com
+
+5. Query parameter -> ?, &, =
+eg:- {{bookURL}}/books?genre=fiction&yearPublished=1960
+
+6. filter using Query parameter
+eg:- {{bookURL}}/books?genre=fiction&yearPublished=1960
+
+7. mutliple Query parameter
+8. path parameter
