@@ -35,6 +35,8 @@ Types of APIs:
 API Tools:
 ---
 
+Postman Link: https://youtu.be/I0RQaztZulA
+
 What is Postman?
 ---
 -> Postman is a tool that helps you create, test, and
@@ -99,3 +101,46 @@ eg:- {{bookURL}}/books?genre=fiction&yearPublished=1960
 
 7. mutliple Query parameter
 8. path parameter
+
+-----
+
+Diff Path Parameter and Query Parameter?
+-----
+Path Parameter	                Query Parameter
+--------------------------------------------------
+Identifies specific resource	Filters/modifies data
+Required usually	            Optional usually
+Part of URL path	            Comes after ?
+/users/10	                    /users?age=20
+
+What are Headers in API Request?
+
+- Headers are like the outside of an envelope when you
+send a letter.
+- They carry extra information (metadata) about your
+request, such as:
+
+. Who is sending the request (% Authorization)
+· What kind of data is expected in return (
+Content-Type)
+. Extra settings the server needs to know
+
+- But headers don't contain the actual data - that's
+what the body is for (like the letter inside the
+envelope)
+
+        Header = Delivery Info
+        Body = The Real Message/Data
+- This helps the server understand how to handle your
+request properly!
+
+Postman commands:
+--------------------
+1. console.log(pm.response) -> 
+type these in scripts command and pm=variable for response
+
+2. const bookID = pm.respone.json().id;
+    pm.collectionVariables.set("bookId", bookID);
+-> it got id from response(pm.response) and set in Environment Variables auto.
+
+3. Postman Fork (like GitHub fork) in collection options 
